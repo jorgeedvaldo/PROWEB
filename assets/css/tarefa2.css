@@ -1,0 +1,8 @@
+ol{
+	display: none;
+}
+#engenharia:target, #direito:target, #economia:target, #saude:target, #letras:target, 
+#sociais:target, #ciencias:target, #turismo:target, #medicina:target, #ista:target
+{
+	display: block;
+}

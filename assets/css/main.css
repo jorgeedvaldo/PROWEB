@@ -1,0 +1,224 @@
+/* BASICO PARA A FORMATACAO DOS TEXTOS */
+body{
+	padding: 0;
+	margin: 0;
+	max-width: 1700px;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+blockquote{
+
+	font-style: italic;
+	border-left: 7px solid #e0e0e0;
+	display: block;
+	padding: 20px 10px;
+	height: auto;
+	width: 50%;
+}
+code{
+
+	margin: 0 5% ;
+	background-color: #f0f0f0;
+	display: inline-block;
+	padding: 20px 10px;
+	height: auto;
+	width: 80%;
+
+}
+a{
+	background-color: transparent;
+	text-decoration: none;
+	color: #ff3334; /*vermelho*/
+	transition: color 0.4s linear;
+}
+a:hover{
+	color: #252525; /*preto*/
+}
+/* CABECALHO */
+header{
+	background-color: #252525;
+	display: block; 	
+	min-height: 60px;
+	height: auto;
+	width: 100%;	
+	top:0;
+	position: fixed;
+	z-index: 1030;
+}
+header ul li a{
+	color: #767676; /*cinzento*/
+	transition: color 0.3s linear;
+	text-decoration: none;
+}
+header a:hover, .active > a{
+	text-decoration: none;
+	color: #ff3334;
+}
+.cab-titulo {
+	margin-top: 18px;
+    font-family: sans-serif;
+    font-weight: 900;
+	color: white;
+	font-size: 18px;
+	color: white;
+}
+.cab-titulo:hover{
+	color: #767676;
+}
+.cab-menu{
+	display: block;
+	list-style: none;
+	float: left;
+	margin:0;
+	position: relative;
+	background-color: #252525;
+}
+.cab-menu li{
+	position: relative;
+	display: block;
+	float: left;	
+}
+.cab-menu li a{
+    display: block;
+    padding: 18px 18px;
+}
+@media (max-width: 760px){
+	.cab-menu{
+		display: none;
+	}
+}
+/*MENU DOWN*/
+.dropdown ul{
+	float: none;
+	right: 0;
+	position: absolute;
+	display: none;
+	width: 150px;
+	height: auto;
+	background-color: #252525;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.dropdown ul li{
+	float: none;
+	text-align: left;
+}
+.dropdown:hover ul, .dropdown ul li:hover{
+	display: block;
+}
+
+/*MARGEM DO CABEÇALHO*/
+.margin-cab{
+	margin-bottom: 60px;
+}
+/* RODAPÉ */
+footer{
+	bottom: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #767676; /*cinzento*/
+	background-color: #252525; /*preto*/
+}
+footer a:hover{
+	color: white;
+	text-decoration: none;
+}
+footer h4{
+	color: white;
+}
+/* ÍCONES PARA REDES SOCIAIS */
+.icon-social{
+	margin-right: 8px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	background-color: #767676; 
+	font-size: 26px;
+	padding: 10px 0px;
+	width: 46px;
+	display: inline-block;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+.icon-social:hover
+{
+	background-color: #ff3334;
+}
+/* ESQUERDA E DIREITA */
+.esquerda{
+	float: left;
+}
+.direita{
+	float: right;
+}
+/*CENTRAR TEXTO*/
+.centered{
+	text-align: center;
+}
+
+/* CONTAINER */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*lINHA HORIZONTAL*/
+.linhaH {
+    border-bottom: 2px solid #767676;
+    margin-bottom: 25px;
+}
+
+/*IMAGEM RESPONSIVA*/
+.img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*BiLBOARD*/
+.capa{
+	background: url(../img/full.png) no-repeat center center;
+	min-height: 350px;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 20px; 
+	padding-top: 130px;
+	width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+.capa p{
+	display: inline-block;
+    color: #000;
+    font-family: segoe ui;
+    font-weight: lighter;
+    font-size: 35px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    z-index: 30;
+    text-align: center;
+}

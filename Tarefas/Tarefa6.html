@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Aulas de programação web" />
+		<meta name="keywords" content="ej, proweb, edvaldo, jorge, aulas" />
+	 	<meta name="autor" content="Name: Edivaldo dos Santos Jorge; Email: edvaldojorge1996@gmail.com" />
+		<title> PROWEB - POSICIONAMENTOS </title>
+		<!--******************CSS******************-->	
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        
+        <link rel="stylesheet" href="../assets/css/icomoon.css"/>
+	</head>
+	<body>
+		<header id="cab"></header>
+
+		<!-- MARGEM POR CAUSA DO HEADER SUSPENSO -->		
+		<div class="margin-cab"></div>
+
+		<section>
+			<div class="container">
+					<h1>TAREFA 6, POSICIONAMENTOS</h1>
+					<div class="linhaH"></div>
+
+					<h4> Posicionamento relativo </h4>
+					<p>Ao declararmos position:relative sozinha não causa nenhum efeito no posicionamento. Se usarmos ela em conjunto com as propriedades top, right, bottom e left, movimenta o bloco de sua posição inicial para uma posição conforme declarado nas propriedades citadas.
+					O bloco sai de sua posição original e o espaço que ela ocupava é preservado.</p>
+
+					<p><b>Exemplo:</b></p>
+					<code>
+						div#dois {<br>
+					    background: #009900;<br>
+					    position: relative;<br>
+					    left: 60px;<br>
+					    top: 35px;<br>
+					    }
+					</code>
+					<p>
+						<H4>Imagem ilustrativa</H4>
+						<img class="img" src="../assets/img/tarefa6_1.png">
+					</p>
+
+					<h4> Posicionamento absoluto </h4>
+					<p>Para declararmos um bloco com posicionamento absoluto usamos a propriedade position:absolute. Um bloco com posicionamento absoluto retira o elemento da posição original, fazendo com que o lugar deixado seja ocupado pelo elemento que se segue.</p>
+					<p><b>Exemplo</b></p>
+					<code>
+						Div#dois {<br>
+					    background: #009900;<br>
+					    position: absolute;<br>
+					    left: 60px;<br>
+					    top: 35px;<br>
+					    }
+					</code>
+					<p>
+						<H4>Imagem ilustrativa</H4>
+						<img class="img" src="../assets/img/tarefa6_2.png">
+					</p>
+					<p>Veja que a DIV 3 ocupou o espaço deixado pela DIV 2</p>
+					<h4> Posicionamento estático </h4>
+					<p>O valor static usado em position é o valor padrão de posicionamento. Os blocos ficam onde estão. O uso dessa declaração é para sobrescrever um posicionamento declarando anteriormente.</p>
+
+					<h4> Posicionamento fixo~</h4>
+
+					<p>O valor fixed usado em position deixa o bloco posicionado de maneira fixa em relação a uma referência. O contexto de posicionamento é sempre a área de renderização, exemplo, canto superior esquerdo da tela do navegador. O bloco com esse valor não se movimenta quando há rolagem na página. O IE6 não suporta essa declaração.</p>
+
+			</div>
+			<h4 class="centered"><a href="../index.html"> Página Inícial </a> &gt; <span> Tipos de posicionamentos </span> </h4>
+		</section>
+
+		<footer id="rod">
+		</footer>
+
+		<script type="text/javascript" src="../assets/js/HeaderAndFooter.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
+	</body>
+</html>

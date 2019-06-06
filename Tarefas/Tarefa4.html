@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Aulas de programação web" />
+		<meta name="keywords" content="ej, proweb, edvaldo, jorge, aulas" />
+	 	<meta name="autor" content="Name: Edivaldo dos Santos Jorge; Email: edvaldojorge1996@gmail.com" />
+		<title> PROWEB - Tarefas </title>
+		<!--******************CSS******************-->	
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        <link rel="stylesheet" href="../assets/css/tarefa4.css"/>
+        <!--******************ICOMOON******************-->	
+        <link rel="stylesheet" href="../assets/css/icomoon.css"/>
+	</head>
+	<body>
+		<header id="cab"></header>
+
+		<!-- MARGEM POR CAUSA DO HEADER SUSPENSO -->		
+		<div class="margin-cab"></div>
+
+		<section>
+		<div class="container">	
+				<h1> Selectores </h1>
+				<div class="linhaH"></div>
+				<p>Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem as definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de CSS num elemento style ou usando o element link apontando para um arquivo externo que contenha o bloco CSS.</p>
+				<p>Para uso com o CSS, foi criado o atributo class que todo elemento pode conter.</p>
+				<p>As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:</p>
+				<code>
+					elemento do tipo : element_name { style definition; }
+					elemento do tipo com a classe : element_name.class_name { style definition; }
+					todos os elementos com a classe : .class_name { style definition; }
+					o elemento com o id : #id_of_element { style definition; }
+					casamento de um grupo : element_name_01, element_name_02, .class_name { style definition; }
+				</code>
+				<p>Exemplos:</p>
+				<code>
+					p {text-align: right; color: #BA2;}
+					p.minhaclasse01 { color:#ABC; }
+					.minhaclasse02 { color:#CAD; }
+					# iddomeuelemento { color:#ACD; }
+					p.minhaclasse03 .minhaclasse04 { color:#ACD; }
+				</code>
+				<h4> Tipos de selectores </h4>
+				<ul>
+					<li>Simples
+						<ul>
+							<li>Selectores Universal</li>
+							<li>Selector Elemento</li>
+							<li>Selector Atributo</li>
+							<li>Selector de ID</li>
+							<li>Selector de Classe</li>
+						</ul>
+					</li>
+					<li>Composto
+						<ul>
+							<li>Selector Descendente</li>
+							<li>Selector Adjacente (+)</li>
+							<li>Selectores filhos (&gt;)</li>
+						</ul>
+					</li>
+					<li>Pseudo-Selector
+						<ul>
+							<li>Selector de Pseudo-elemento</li>
+							<li>Selector de Pseudo-classe</li>
+						</ul>
+					</li>
+				</ul>
+			<h1>SELECTORES EM CSS</h1>
+			<table border="1">
+				<tr>
+					<td>Selector</td>
+					<td>Descricao</td>
+					<td>Exemplos</td>
+				</tr>
+				<tr>
+					<td>*</td>
+					<td>Selector universal (opera em todos elementos)</td>
+					<td>* {color: black;}</td>
+				</tr>
+
+				<tr>
+					<td>Selector do tipo elemento</td>
+					<td>Seleciona qualquer tipo de elemento (tags html)</td>
+					<td>h1{ color: blue;}</td>
+				</tr>
+
+				<tr>
+					<td>Selector Contextual</td>
+					<td>Seleciona qualquer elemento (tag) que estiver contido dentro de uma outra tag</td>
+					<td>ul li{ color: blue;}</td>
+				</tr>
+				<tr>
+					<td>Selector de Classe</td>
+					<td>Seleciona os elementos (tags html) que se aplicou a class</td>
+					<td>.big{ font-size: 50px;}</td>
+				</tr>
+
+				<tr>
+					<td>Selector de ID</td>
+					<td>Seleciona o elemento (tag html) identificado com id.</td>
+					<td>#big{ font-size: 50px;}</td>
+				</tr>
+			</table>
+
+			<h1> Unidades de Medida </h1>
+			<div class="linhaH"></div>
+			<p><b> Definição: </b>Na ciência, unidade de medida é uma medida (ou quantidade) específica de determinada grandeza física usada para servir de padrão para outras medidas.</p>
+			<p>Com o desenvolvimento da Cascading Style Sheets (ou CSS), as recomendações de melhores práticas W3C dentro de HTML e marcação on-line agora chamam páginas web a serem baseadas em designs escaláveis, usando uma unidade relativa de medida (como a medida em), em vez de uma unidade fixa como pixels ("px!) ou pontos.</p>
+			<div class="centered">
+				<table border="1">
+					<tr>
+						<td> Unidade </td>
+						<td> Símbolo </td>
+						<td> Exemplo </td>
+					</tr>
+					<tr>
+						<td> Polegada </td>
+						<td> in </td>
+						<td> div{width: 20in;} </td>
+					</tr>
+					<tr>
+						<td> Centimetro </td>
+						<td> cm </td>
+						<td> div{width: 4cm;} </td>
+					</tr>
+					<tr>
+						<td> Milímetro </td>
+						<td> mm </td>
+						<td> div{width: 3mm;} </td>
+					</tr>
+					<tr>
+						<td> Ponto </td>
+						<td> pt </td>
+						<td> div{font-size: 30pt;}</td>
+					</tr>
+					<tr>
+						<td> Pica (Paica) </td>
+						<td> pc </td>
+						<td> div{font-size: 20pc;} </td>
+					</tr>
+					<tr>
+						<td> Pixel </td>
+						<td> px </td>
+						<td> div{font-size: 24px;} </td>
+					</tr>
+
+					<tr>
+						<td> Percentagem </td>
+						<td> % </td>
+						<td> .imagem_relativa {width: 50%;} </td>
+					</tr>
+					<tr>
+						<td> Relativo ao tamanho de letra </td>
+						<td> em </td>
+						<td> #menu {font-size: 2.65em;} </td>	
+					</tr>
+					<tr>
+						<td> Relativo ao x maiuscula </td>
+						<td> ex </td>
+						<td> H2 {font-size: 2.65ex;} </td>
+					</tr>
+				</table>
+			</div>
+			<p>O W3C definiu como padrão a abreviação "pc" para representar paicas em scripts CSS. Sendo:
+				<ul>
+					<li>pt: pontos -- os pontos usados pelo CSS são equivalentes a 72 avos de uma polegada.</li>
+					<li>pc: paicas -- 1 paica equivale a 12 pontos.</li>
+				</ul>
+			</p>
+
+		<h4 class="centered"><a href="../index.html"> Página Inícial </a> &gt; <span> Tipos de selectores e unidades de medida</span> </h4>
+		</section>
+
+		</div>
+		<footer id="rod">
+		</footer>
+
+		<script type="text/javascript" src="../assets/js/HeaderAndFooter.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

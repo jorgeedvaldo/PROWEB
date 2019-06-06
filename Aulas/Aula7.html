@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Aulas de programação web" />
+		<meta name="keywords" content="ej, proweb, edvaldo, jorge, aulas" />
+ 	    <meta name="autor" content="Name: Edivaldo dos Santos Jorge; Email: edvaldojorge1996@gmail.com" />
+        <!--******************CSS******************-->	
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        <link rel="stylesheet" href="../assets/css/aula7.css"/>
+        <!--******************ICOMOON******************-->	
+        <link rel="stylesheet" href="../assets/css/icomoon.css"/>
+		<title>PROWEB - AULA 7</title>
+	</head>
+ 	<body>
+ 		<header id="cab"></header>
+
+		<!-- MARGEM POR CAUSA DO HEADER SUSPENSO -->		
+		<div class="margin-cab"></div>
+
+		<section id="corpo">
+			<div class="container">
+		 		<h1> SELECTORES DO TIPO PSEUDO-ELEMENTO E PSEUDO CLASS </h1>
+		 		<div class="linhaH"></div>
+		 		<p> Hoje vamos falar sobre o selectores do tipo pseudo-elemento e pseudo-classe. 
+				</p>
+				<ul>
+					<h4> Pseudo-Selector </h4>
+					<li>Selector de Pseudo-elemento</li>
+					<li>Selector de Pseudo-classe</li>
+				</ul>
+				<a href="#"> Teste com o pseudo-elemento para este link </a>
+		 	</div>
+		</section>
+
+		<section id="corpo2">
+			<div class="container">
+			<h1> EFEITO CASCATA </h1>
+			<div>
+				<p>Formar, assim, do estudo de generalidades científicas uma
+				seção distinta do grande trabalho intelectual é simplesmente
+				estender a aplicação do mesmo princípio de divisão que,
+				sucessivamente, separou as diversas especialidades. </p>
+
+				<p>Enquanto as diferentes ciências positivas foram pouco desenvolvidas, suas
+				relações mútuas não podiam possuir bastante importância para
+				dar lugar, ao menos duma maneira permanente, a uma classe
+				particular de trabalho, ao mesmo tempo que a necessidade desse
+				novo estudo era muito menos urgente. Mas hoje cada uma dessas
+				ciências tomou separadamente extensão suficiente para que o
+				exame de suas relações mútuas possa dar lugar a trabalhos
+				contínuos, ao mesmo tempo que essa nova ordem de estudos
+				torna-se indispensável para prevenir a dispersão das concepções
+				humanas.</p>
+			</div>
+
+			<p>
+				As coisas que executam primeiro, vejamos a lista das folhas.
+				<ol type="1">
+					<li>Folha do navegador</li>
+					<li>Folha do usuário</li>
+					<li>Folha do autor
+						<ol type="a">
+							<li>Estlo externo</li>
+							<li>Estilo Incorporado</li>
+							<li>Estilo em linha</li>
+						</ol>
+					</li>
+					<li>Importante do autor</li>
+					<li>Importante do usuário</li>
+				</ol>
+			</p>
+
+			<h4>Peso dos selectores, Cálculo</h4>
+				<ol type="1">
+					<li>inline</li>
+					<li>#id</li>
+					<li>.classes, :pseudo-classes, atributos</li>
+					<li>elementos, pseudo-elemento, etc</li>
+				</ol>
+				<!--
+					Calculando os pesos
+					p{} 0, 0, 0, 1 = 1
+					div p a{} 0, 0, 0, 3 = 3
+					.classe ul {} 0, 0, 1, 1 = 11
+					#ista {} 0, 1, 0, 0 = 100
+					<img style="color:red"> 1, 0, 0, 1 = 1001
+				-->
+			</div>
+		</section>
+
+		<section id="corpo3">
+			<div class="container">
+				<h1>BOX-MODEL (MODELO DE CAIXA)</h1>
+				<p class="caixa">
+					Este é o teste da caixa
+				</p>
+				
+			</div>
+		</section>
+
+		<h4> Tarefa </h4>
+		<p> Pesquisar sobre posicionamentos(relativos, absolutos, outros) </p>
+ 		<footer id="rod">
+		</footer>
+
+		<script type="text/javascript" src="../assets/js/HeaderAndFooter.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
+ 	</body>
+ </html>

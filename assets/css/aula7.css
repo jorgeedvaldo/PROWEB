@@ -1,0 +1,50 @@
+/* PSEUDO ELEMENTO QUE ALTERA A PRIMEIRA LETRA */
+/*Primeira letra*/
+#corpo p:first-letter{
+	font-size: 2em;
+}
+/*Primeira linha*/
+#corpo p:first-line{
+	font-weight: bold;
+}
+/*antes do texto*/
+#corpo p:before{
+	content: "CSS";
+}
+/*depois do texto*/
+#corpo p:after{
+	content: "Fim"
+}
+/*link*/
+#corpo a:link{
+	background-color: black;
+	text-decoration: none;
+}
+/*link visitado*/
+#corpo a:visited{
+	background-color: white;
+	color: green;
+}
+/*link clicado*/
+#corpo a:active{
+	background-color: blue;
+	color: pink;
+}
+/*passando o mouse por cima*/
+#corpo a:hover{
+	color:white;
+}
+/*EFEITO EM CASCATA*/
+#corpo2 div>p{
+	color: red;
+}
+#corpo2 p{
+	color: green !important; 
+}
+/*MODELO DE CAIXA*/
+#corpo3 .caixa{
+		border-width: 3px;
+		border-style:dashed;
+		border-left-color: red;
+		padding: 5px 10px;
+}

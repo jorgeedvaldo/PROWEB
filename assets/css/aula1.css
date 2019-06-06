@@ -1,0 +1,25 @@
+body{
+	background-color: gray;
+}
+section ul{
+	text-align: center;
+}
+section ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px 18px;
+}
+section a{
+	color: red;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+section a:hover{
+	font-size: 2em;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	text-shadow: 3px 2px 3px red;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+		<meta name="description" content="Aulas de programação web" />
+		<meta name="keywords" content="ej, proweb, edvaldo, jorge, aulas" />
+	 	<meta name="autor" content="Name: Edivaldo dos Santos Jorge; Email: edvaldojorge1996@gmail.com" />
+
+	 	<!--******************CSS******************-->	
+        <link rel="stylesheet" href="../assets/css/main.css"/>
+        <!--******************ICOMOON******************-->	
+        <link rel="stylesheet" href="../assets/css/icomoon.css"/>
+		<title> PROWEB - AULA 6 </title>
+</head>
+<body>
+		<header id="cab"></header>
+
+		<!-- MARGEM POR CAUSA DO HEADER SUSPENSO -->		
+		<div class="margin-cab"></div>
+		<section>
+			<div class="container">	
+				<h1>TIPOS DE SELECTORES</h1>
+					<ul>
+					<li>Simples
+						<ul>
+							<li>Selectores Universal</li>
+							<li>Selector Elemento</li>
+							<li>Selector Atributo</li>
+							<li>Selector de ID</li>
+							<li>Selector de Classe</li>
+						</ul>
+					</li>
+					<li>Composto
+						<ul>
+							<li>Selector Descendente</li>
+							<li>Selector Adjacente (+)</li>
+							<li>Selectores filhos (&gt;)</li>
+						</ul>
+					</li>
+					<li>Pseudo-Selector
+						<ul>
+							<li>Selector de Pseudo-elemento</li>
+							<li>Selector de Pseudo-classe</li>
+						</ul>
+					</li>
+				</ul>
+
+
+				<h3>Selectores Simples</h3>
+				<p> Para os selectores simples podemos encontrar os seguintes: </p>
+				<ul>
+					<li>Selectores Universal</li>
+					<li>Selector Elemento</li>
+					<li>Selector Atributo</li>
+					<li>Selector de ID</li>
+					<li>Selector de Classe</li>
+				</ul>
+
+				<h4> Selector Atributo </h4>
+				<p> Aplica-se os estilos nos elementos através dos seus atributos. Exemplo: </p>
+				<code>
+					strong[tittle=info]{ <br>
+						color: red; <br>
+						font.size: 2em;<br>
+					} <br>
+
+				</code>
+
+				<p> Se no seu titulo tiver duas palavras, ou mais, separadas por espaço, podemos usar o til (~) para estilizar o elemento apartir de umas das palavras  </p>
+				<code>
+					&lt;strong tittle="info ista"&gt; Bla, bla. &lt;/strong&gt;
+				</code>
+				<code>
+					strong[tittle ~=info]{ <br>
+						color: red; <br>
+						font.size: 2em;<br>
+					} <br>
+
+				</code>
+				<div>		
+					<H4>Tarefa</H4>
+					<p>box-model, tipos de linha</p>
+				</div>
+			</div>
+			
+
+		</section>
+		<footer id="rod">
+		</footer>
+
+		<script type="text/javascript" src="../assets/js/HeaderAndFooter.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

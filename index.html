@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-pt">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Aulas de programação web" />
+		<meta name="keywords" content="ej, proweb, edvaldo, jorge, aulas" />
+ 	    <meta name="autor" content="Name: Edivaldo dos Santos Jorge; Email: edvaldojorge1996@gmail.com" />
+		<title> PROWEB - HOME</title>
+        <!--******************CSS******************-->	
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <!--******************ICOMOON******************-->	
+        <link rel="stylesheet" href="assets/css/icomoon.css"/>
+	
+	</head>
+
+
+	<body>
+		<header id="cab"></header>
+
+		<!-- MARGEM POR CAUSA DO HEADER SUSPENSO -->		
+		<div class="margin-cab"></div>
+
+		<!--BILBOARD-->
+		<div class="capa">
+				<p>PROGRAMAÇÃO WEB</p> <br/>
+				<p>Professor: Bernardo Kilulo</p>
+		</div>
+
+		<section>
+			<!-- UM POUCO SOBRE O HTML-->
+			<div class="container">
+				<h4>O que é o HTML?</h4>
+				<div class="linhaH"></div>
+					<p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</p>
+
+					<p>HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes dependentes de tempo (como áudio, vídeo, etc.), conectados por hiperligações. O padrão é independente de outros padrões de processamento de texto em geral.</p>
+
+					<p>SGML é um padrão de formatação de textos. Não foi desenvolvido para hipertexto, mas tornou-se conveniente para transformar documentos em hiper-objetos e para descrever as ligações.</p>
+			</div>
+		</section>
+
+		<footer id="rod">
+		</footer>
+
+		<script type="text/javascript" src="assets/js/HeaderAndFooter.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+
+		<!-- SCRIPT ONLY THIS PAGE  -->
+		<script type="text/javascript">
+		for(var i = 0; i < 20; i++){
+				document.getElementById("cab").innerHTML = document.getElementById("cab").innerHTML.replace("href=\"../","href=\"");
+			}
+		</script>
+	</body>
+
+</html>

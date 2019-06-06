@@ -1,0 +1,25 @@
+h3{
+	border:1px solid red;
+	position: static;
+}
+#cont{
+	height: 80px;
+	width: 400px;
+	background-color: red;
+	z-index: -2;
+	position: fixed;
+}
+#ista{
+	left: 60px;
+	top:220px;
+	width: 300px;
+	height: 100px;
+	position: fixed;
+	background-color: blue;
+	z-index: -1;
+}
+#info{
+	width: 300px;
+	height: 180px;
+	background-color: pink;
+}

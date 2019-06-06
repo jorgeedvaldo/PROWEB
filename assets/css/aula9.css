@@ -1,0 +1,35 @@
+body{
+	background-color: gray;
+}
+#geral{
+	width: 750px;
+	border:5px dashed green;
+	margin: 0 auto;
+}
+div{
+	background-color: white;
+	border:1px solid green;
+}
+#esquerda{
+	width: 250px;
+	float: left;
+}
+#conteudo{
+	width: 492px;
+	float: right;
+}
+#rodape{
+	clear: both;
+}
+ul{
+	list-style: none;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color: black;
+}
+a:hover{
+	color: white;
+	background-color: black;
+	text-decoration:underline;
+}
